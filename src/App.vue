@@ -1,3 +1,7 @@
+<script setup>
+  import ServerStatus from './components/serverStatus.vue';
+</script>
+
 <template>
   <div id="app">
     <ServerStatus />
@@ -5,7 +9,6 @@
 </template>
 
 <script>
-import ServerStatus from "@/components/ServerStatus.vue";
 
 export default {
   name: "App",
