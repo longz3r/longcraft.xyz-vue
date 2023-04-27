@@ -3,6 +3,11 @@ import vue from '@vitejs/plugin-vue'
 
 export default defineConfig({
   plugins: [vue()],
+  resolve: {
+    alias: {
+      '@': '/vercel/path0/src',
+    },
+  },
   build: {
     target: 'es2015',
     assetsDir: '',
@@ -12,7 +17,6 @@ export default defineConfig({
     sourcemap: false,
     rollupOptions: {
       input: 'src/main.js',
-      external: ['@/components/ServerStatus.vue'],
     },
   },
   server: {
