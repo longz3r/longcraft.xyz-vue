@@ -12,7 +12,7 @@ export default defineConfig({
     sourcemap: false,
     rollupOptions: {
       input: 'src/main.js',
-      external: ['components/ServerStatus.vue'],
+      external: ['@/components/ServerStatus.vue'],
     },
   },
   server: {
