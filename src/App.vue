@@ -1,23 +1,16 @@
-<script setup>
-import ServerStatus from "components/ServerStatus.vue";
-</script>
-
 <template>
-  <ServerStatus />
+  <div id="app">
+    <ServerStatus />
+  </div>
 </template>
 
+<script>
+import ServerStatus from "@/components/ServerStatus.vue";
 
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
-</style>
+export default {
+  name: "App",
+  components: {
+    ServerStatus
+  }
+};
+</script>
