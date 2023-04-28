@@ -14,6 +14,7 @@
   <div id="">
     <ServerStatus />
   </div>
+  <!-- <div class="">ngu</div> -->
 </template>
 
 <script>
@@ -25,3 +26,11 @@ export default {
   }
 };
 </script>
+
+<style>
+  @font-face {
+    font-family: "Minecraftia";
+    src: local("Minecraftia"),
+    url(./assets/fonts/Minecraftia-Regular.ttf) format("truetype");
+  }
+</style>

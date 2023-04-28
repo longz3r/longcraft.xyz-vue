@@ -35,9 +35,9 @@
         <div class="pb-5">Bedrock port: {{ status.port }}</div>
         <!-- <div v-if="status.online">Max Players: {{ status.players.max }}</div> -->
 
-        <div v-if="status.online" class="flex flex-col items-start bg-slate-950 pl-1.5 pr-1 pb-0.5">
-            <div class="text-xl" v-html="status.motd.html[0]"></div>
-            <div class="text-xl" v-html="status.motd.html[1]"></div>
+        <div v-if="status.online" class="flex flex-col items-start bg-slate-950 pl-2 pr-2 pt-3">
+            <div class="text-sm font-minecraftia" v-html="status.motd.html[0]"></div>
+            <div class="text-sm font-minecraftia" v-html="status.motd.html[1]"></div>
         </div>
       </div>
     </div>
