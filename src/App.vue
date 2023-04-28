@@ -3,10 +3,11 @@
 </script>
 
 <template>
-  <nav class="pb-10 ">
+  <nav class="inline">
         <RouterLink to="/">Survival Multiplayer</RouterLink>
         <RouterLink to="/modpack">Modpack</RouterLink>
   </nav>
+  <div class="flex pt-5"></div>
   <RouterView />
 </template>
 
