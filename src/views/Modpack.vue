@@ -1,5 +1,5 @@
 <script setup>
-  import ServerStatus from '../components/serverStatus.vue';
+  import ServerStatus from '../components/modpackStatus.vue';
 </script>
 
 <template>
@@ -10,6 +10,6 @@
 
 <script>
 export default {
-  name: 'Home'
+  name: 'Modpack'
 }
 </script>

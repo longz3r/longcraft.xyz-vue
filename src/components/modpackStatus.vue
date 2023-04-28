@@ -16,8 +16,7 @@
       <div v-else>
         
         <div v-if="status.online">
-          {{ msg }}
-          <div class="font-mono text-2xl text-green-500 outline outline-offset-2 outline-4 outline-sky-400 rounded-lg">Server online</div>
+          <div class="font-mono text-2xl text-green-500 outline outline-offset-2 outline-4 outline-cyan-500 rounded-lg">Server online</div>
           <div class="pb-5"></div>
           <!-- <div v-if="status.debug.cachetime != 0">
             <div>Dữ liệu update sau {{ status.debug.cacheexpire - status.debug.cachetime }}s</div>
@@ -26,12 +25,16 @@
           <!-- <div>Version: {{ status.version }}</div> -->
         </div>
         <div v-else>
-          <div class="font-mono text-2xl text-red-500 outline outline-offset-2 outline-4 outline-sky-400 rounded-lg">Server offline</div>
+          <div class="font-mono text-2xl text-red-500 outline outline-offset-2 outline-4 outline-cyan-500 rounded-lg">Server offline</div>
           <div class="pb-5"></div>
         </div>
-        <div>Java IP: longcraft.xyz</div>
-        <div>Bedrock IP: bedrock.longcraft.xyz</div>
-        <div class="pb-5">Bedrock port: {{ status.port }}</div>
+        <div>Server IP: modpack.longcraft.xyz</div>
+        <div>Current modpack: Rising Civilizations</div>
+        <div class="inline-flex">
+          <div class="pr-1">Version:</div>
+          <div class="font-bold">1.16.5</div>
+        </div>
+        
         <!-- <div v-if="status.online">Max Players: {{ status.players.max }}</div> -->
 
         <div v-if="status.online" class="flex flex-col items-start bg-slate-950 pl-2 pr-2 pt-2 pb-1">
@@ -59,7 +62,7 @@ export default {
   async created() {
     try {
       const response = await axios.get(
-        "https://api.mcsrvstat.us/2/longcraft.xyz"
+        "https://api.mcsrvstat.us/2/modpack.longcraft.xyz"
       );
       this.status = response.data;
     } catch (error) {
