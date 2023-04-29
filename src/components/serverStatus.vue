@@ -15,8 +15,8 @@
       <div v-if="error">{{ error }}</div>
       <div v-else>
         
-        <div v-if="status.online">
-          <div class="flex-inline font-mono text-2xl text-green-500 outline outline-offset-2 outline-4 outline-sky-400 rounded-lg">Server online</div>
+        <div v-if="status.online" class="">
+          <div class="font-mono text-2xl text-green-500 w-56  border-4 border-sky-400 rounded-lg mx-auto">Server online</div>
           <div class="pb-5"></div>
           <!-- <div v-if="status.debug.cachetime != 0">
             <div>Dữ liệu update sau {{ status.debug.cacheexpire - status.debug.cachetime }}s</div>
@@ -32,7 +32,6 @@
         <div>Bedrock IP: bedrock.longcraft.xyz</div>
         <div class="pb-5">Bedrock port: {{ status.port }}</div>
         <!-- <div v-if="status.online">Max Players: {{ status.players.max }}</div> -->
-        <div v-if="status.online">
           <a :href="'minecraft://?addExternalServer=LongCraft%20SMP|bedrock.longcraft.net:' + port" rel="norefferer" class="relative inline-flex items-center justify-center p-0.5 mb-5 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-cyan-500 to-blue-500 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-800">
             <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0 inline-flex items-center">
               <img src="../assets/plus.svg" width="30" class="pr-2">
@@ -45,7 +44,6 @@
               Quick connect (Bedrock)
             </span>
           </a> -->
-        </div>
 
         <div v-if="status.online" class="flex flex-col items-start bg-slate-950 pl-2 pr-2 pt-2 pb-1">
             <div class="text-sm font-minecraftia" v-html="status.motd.html[0]"></div>
