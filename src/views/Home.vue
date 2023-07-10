@@ -1,5 +1,5 @@
 <script setup>
-    import ServerStatus from '../components/ServerStatus.vue'
+  import ServerStatus from '../components/serverStatus.vue';
 </script>
 
 <template>
@@ -14,9 +14,9 @@
 
       />
     </div>
-    <div>
-        <ServerStatus />
-    </div>
+  <div>
+    <ServerStatus />
+  </div>
 </template>
 
 <script>
