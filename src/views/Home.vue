@@ -3,8 +3,8 @@
 </script>
 
 <template>
-    <div class="font-bold text-2xl pb-5">Server open soon</div>
-    <div class="flex flex-col pb-14">
+    <div class="font-bold text-2xl pb-5">Server open delayed (More information later)</div>
+    <!-- <div class="flex flex-col pb-14">
       <vue3-flip-countdown :deadlineISO="'2023-07-10T07:00:00Z'"
         :labelColor = "'#FFFFFF'"
         :mainColor = "'#00FFFF'"
@@ -13,7 +13,7 @@
         :secondFlipBackgroundColor = "'#4f4f4e'"
 
       />
-    </div>
+    </div> -->
   <div>
     <ServerStatus />
   </div>
