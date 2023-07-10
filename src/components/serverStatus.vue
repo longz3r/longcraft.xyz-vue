@@ -16,7 +16,7 @@
       <div v-else>
         
         <div v-if="status.online" class="">
-          <div class="font-mono text-2xl text-green-500 w-56  border-4 border-sky-400 rounded-lg mx-auto">Server online</div>
+          <div class="inline-flex pl-4 pr-4 font-mono text-2xl text-green-500 w-56  border-4 border-sky-400 rounded-lg mx-auto">Server online</div>
           <div class="pb-5"></div>
           <!-- <div v-if="status.debug.cachetime != 0">
             <div>Dữ liệu update sau {{ status.debug.cacheexpire - status.debug.cachetime }}s</div>
@@ -25,7 +25,7 @@
           <!-- <div>Version: {{ status.version }}</div> -->
         </div>
         <div v-else>
-          <div class="font-mono text-2xl text-red-500 outline outline-offset-2 outline-4 outline-sky-400 rounded-lg">Server offline</div>
+          <div class="inline-flex pl-4 pr-4 font-mono text-2xl text-red-500 outline outline-offset-2 outline-4 outline-sky-400 rounded-lg">Server offline</div>
           <div class="pb-5"></div>
         </div>
         <div>Java IP: longcraft.xyz</div>

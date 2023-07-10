@@ -1,12 +1,14 @@
 <script setup>
   import { RouterLink, RouterView } from 'vue-router'
+  import countdownTimer from './components/countdownTimer.vue';
 </script>
 
 <template>
-  <nav class="inline">
+  <!-- <nav class="inline">
         <RouterLink to="/">Survival Multiplayer</RouterLink>
         <RouterLink to="/modpack">Modpack</RouterLink>
-  </nav>
+  </nav> -->
+  
   <div class="flex pt-5"></div>
   <RouterView> </RouterView>
 
