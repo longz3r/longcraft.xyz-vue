@@ -3,10 +3,9 @@
 </script>
 
 <template>
-    <div class="font-bold text-2xl pb-5">Server open postponed (More information later)</div>
-    <div class="font-bold text-xl pb-5">Reason: hosting's panel down</div>
-    <!-- <div class="flex flex-col pb-14">
-      <vue3-flip-countdown :deadlineISO="'2023-07-10T07:00:00Z'"
+    <div class="font-bold text-2xl pb-5">SERVER OPEN COUNTDOWN</div>
+    <div class="flex flex-col pb-14">
+      <vue3-flip-countdown :deadlineISO="'2023-07-11T08:00:20+00:00'"
         :labelColor = "'#FFFFFF'"
         :mainColor = "'#00FFFF'"
         :secondFlipColor = "'#00FFFF'"
@@ -14,7 +13,7 @@
         :secondFlipBackgroundColor = "'#4f4f4e'"
 
       />
-    </div> -->
+    </div>
   <div>
     <ServerStatus />
   </div>
