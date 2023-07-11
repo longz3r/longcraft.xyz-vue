@@ -65,7 +65,7 @@ export default {
       loading: true,
       error: null,
       status: null,
-      port: null
+      port: 8225
     };
   },
   async created() {
@@ -74,7 +74,7 @@ export default {
         "https://api.mcsrvstat.us/2/longcraft.xyz"
       );
       this.status = response.data;
-      this.port = this.port + this.status.port
+      // this.port = this.port + this.status.port
     } catch (error) {
       this.error = error.message;
     } finally {
