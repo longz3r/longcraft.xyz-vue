@@ -1,6 +1,5 @@
 <script setup>
   import { RouterLink, RouterView } from 'vue-router'
-  import countdownTimer from './components/countdownTimer.vue';
 </script>
 
 <template>
