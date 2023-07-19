@@ -3,22 +3,29 @@
 </script>
 
 <template>
-  <nav class="inline">
+  <div class="pt-10 inline-flex">
+    <a href="https://discord.gg/2ybsgmYgbD" target="_blank"  class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-cyan-500 to-blue-500 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-800">
+      <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0 inline-flex items-center">
+      <img src="./assets/discord.svg" width="40" class="pr-2">
+        Discord
+      </span>
+    </a>
+    <a href="http://map.longcraft.xyz:8225" target="_blank"  class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-cyan-500 to-blue-500 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-800">
+      <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0 inline-flex items-center">
+      <img src="./assets/mcMap.webp" width="40" class="pr-2">
+        Server map
+      </span>
+    </a>
+  </div>
+  <!-- <nav class="inline">
         <RouterLink to="/">Survival Multiplayer</RouterLink>
         <RouterLink to="/map">Map</RouterLink>
-  </nav>
+  </nav> -->
   
   <div class="flex pt-5"></div>
   <RouterView> </RouterView>
 
-  <div class="pt-10 inline-flex">
-    <a href="https://discord.gg/2ybsgmYgbD" target="_blank"  class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-cyan-500 to-blue-500 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-800">
-      <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0 inline-flex items-center">
-      <img src="./assets/discord.svg" width="30" class="pr-2">
-        Discord
-      </span>
-    </a>
-  </div>
+  
 </template>
 
 <script>
