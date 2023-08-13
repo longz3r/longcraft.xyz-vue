@@ -1,7 +1,10 @@
 <template>
 
     <div>
-      <ServerStatus />
+      <!-- <ServerStatus /> -->
+      <div class="pt-20 font-minecraftia text-3xl">
+    Server is scheduled to be reopened in early September
+  </div>
     </div>
 </template>
 
